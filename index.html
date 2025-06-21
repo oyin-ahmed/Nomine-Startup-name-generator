@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nominé – Startup Name Generator</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Nominé</h1>
+    </header>
+    <main>
+      <div class="form-container">
+        <form id="name-generator">
+          <input
+            type="text"
+            placeholder="Describe your startup idea..."
+            autofocus
+            required
+            autocomplete="off"
+            class="prompt"
+            id="startup"
+          />
+          <input type="submit" class="button" />
+        </form>
+        <div class="hint">
+          i.e.: "A delivery app that sends fresh flowers on demand."
+        </div>
+      </div>
+      <div class="name hidden" id="name-list">hello</div>
+    </main>
+
+    <footer>
+      This AI project was coded by
+      <a href="https://github.com/oyin-ahmed" target="_blank">Oyin Ahmed </a>
+      and is
+      <a href="https://github.com/oyin-ahmed/" target="_blank">
+        open-sourced on GitHub</a
+      >
+      and is
+      <a href="" target="_blank">hosted on Netlify</a>.
+    </footer>
+  </body>
+</html>
