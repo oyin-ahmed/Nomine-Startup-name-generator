@@ -17,17 +17,29 @@ header {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 54px;
   margin: 0;
   letter-spacing: 2px;
+  font-family: "Playfair Display", serif;
 }
-
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  color: #666;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 40px 20px;
+  width: 100%;
 }
 
 .form-container {
@@ -78,12 +90,51 @@ main {
 }
 
 .name {
+  max-width: 600px;
   margin-top: 30px;
   font-size: 20px;
   color: #4b0082;
   font-weight: 600;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
 }
 
+.name ul {
+  list-style: none;
+  padding: 10px;
+  margin: 15px;
+  display: flex;
+  gap: 10px;
+  min-width: 150px;
+}
+
+.name li span {
+  font-size: 18px;
+  padding: 10px 0;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.name li::after {
+  content: "|";
+  margin: 0 12px;
+  color: #2c2c2c;
+  pointer-events: none;
+  transition: none;
+}
+
+.name li:last-child::after,
+.name ul li:nth-child(5)::after {
+  content: "";
+}
+
+.name li span:hover {
+  transform: scale(1.05);
+  color: #4b0082;
+  background-color: #e5dbff;
+  border-radius: 6px;
+}
 .hidden {
   display: none;
 }
